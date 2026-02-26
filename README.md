@@ -26,7 +26,7 @@ A simple blog application built with React that displays articles, topics, and c
 1. Clone the repository:
   
 ```
-git clone <your-repo-url>
+git clone https://github.com/JamesVeth/nc-news.git
 ```
 Install dependencies:
 ```
