@@ -1,16 +1,48 @@
-# React + Vite
+# NC-News
+## Author
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**James Vethmony**  
+GitHub: [@JamesVeth](https://github.com/JamesVeth)
 
-Currently, two official plugins are available:
+A simple blog application built with React that displays articles, topics, and comments with voting functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Browse articles by topic or view all articles  
+- View individual articles with full content and images  
+- Post comments locally on articles  
+- Upvote or downvote articles and comments (UI updates instantly)  
+- Responsive, Medium-inspired UI  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React  
+- React Router DOM  
+- Vite  
+- CSS  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Clone the repository:
+  
+```
+git clone <your-repo-url>
+```
+Install dependencies:
+```
+npm install
+```
+Start the development server:
+```
+npm run dev
+```
+Open your browser and go to http://localhost:5173
+
+## Notes
+
+Comment posting and voting currently update the UI locally.
+
+The project fetches articles, topics, and users from a backend API hosted on Render.
+
+## License 
+MIT
