@@ -1,0 +1,79 @@
+.article-list { 
+    max-width: 800px; 
+    margin: 2rem auto; 
+}
+.article-card {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.thumbnail { 
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 4px; 
+}
+
+.content h2 { 
+    margin: 0; 
+    font-size: 1.2rem; 
+}
+
+.meta, .stats { 
+    font-size: 0.9rem; 
+    color: #666; 
+}
+
+
+.article-card {
+  display: flex;
+  gap: 1rem;
+  background: #fff;      /* ensure shadow is visible */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  /* NEW: box shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* optional hover effect */
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vote-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.vote-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;           /* hand icon */
+  font-size: 1.2rem;         /* adjust as needed */
+  line-height: 1;
+  padding: 0;
+  transition: transform 0.1s ease, color 0.15s ease;
+  outline: none;             /* no focus outline */
+}
+
+.vote-buttons button:hover {
+  color: #646cff;            /* Medium-style accent */
+  transform: scale(1.2);     /* subtle pop */
+}
+
+.vote-buttons span {
+  font-weight: 500;
+  font-size: 1rem;
+}

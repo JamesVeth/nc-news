@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from "react";
-import "./NavBar.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./NavBar.css"; // ✅ matches file name exactly
 
-export default function NavBar() {
-  const [topics, setTopics] = useState([]);
-
-  useEffect(() => {
-    fetch("https://back-end-nc-news-mc0k.onrender.com/api/topics")
-      .then((res) => res.json())
-      .then((data) => setTopics(data.topics));
-  }, []);
-
+export default function NavBar({ topics }) {
   return (
-    <div className="navbar">
-      <div className="nav-left">NC News</div>
-      <div className="nav-right">
-        {topics.map((topic) => (
-          <span key={topic.slug} className="nav-topic">
+    <nav className="navbar">
+      <Link to="/" className="logo">NC News</Link>
+      <div className="topics">
+        <Link to="/">All</Link>
+        {topics.map(topic => (
+          <Link key={topic.slug} to={`/topic/${topic.slug}`}>
             {topic.slug.charAt(0).toUpperCase() + topic.slug.slice(1)}
-          </span>
+          </Link>
         ))}
       </div>
-    </div>
+    </nav>
   );
 }

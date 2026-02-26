@@ -1,31 +1,25 @@
-/* Navbar styling */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: red;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background: #ff1616;
+  box-shadow: 3px 3px 3px 4px rgba(58, 58, 58, 0.322);
   padding: 1rem 2rem;
-  color: white;
-  font-weight: bold;
-  z-index: 1000;
-  box-shadow: 0px 1px 10px rgb(66, 66, 66);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
+.logo { 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: white;
 }
 
-.navbar .nav-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-size: 1rem;
-}
+.topics a { 
+    margin-left: 1rem; 
+    font-weight: 500; 
+    color: white;
 
-.navbar .nav-links a:hover {
-  text-decoration: underline;
 }
