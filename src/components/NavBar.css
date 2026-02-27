@@ -23,3 +23,9 @@
     color: white;
 
 }
+
+.active-topic {
+  font-weight: bold;
+  border-bottom: 2px solid rgb(151, 202, 255);  
+  padding-bottom: 2px;                  
+}

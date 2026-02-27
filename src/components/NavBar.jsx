@@ -1,17 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css"; // match file name exactly
+import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 export default function NavBar({ topics }) {
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">NC News</Link>
+      <NavLink to="/" className="logo">NC News</NavLink>
       <div className="topics">
-        <Link to="/">All</Link>
+        <NavLink to="/" className={({ isActive }) => isActive ? "active-topic" : ""}>
+          All
+        </NavLink>
         {topics.map(topic => (
-          <Link key={topic.slug} to={`/topic/${topic.slug}`}>
+          <NavLink
+            key={topic.slug}
+            to={`/topic/${topic.slug}`}
+            className={({ isActive }) => isActive ? "active-topic" : ""}
+          >
             {topic.slug.charAt(0).toUpperCase() + topic.slug.slice(1)}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </nav>
