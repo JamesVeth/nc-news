@@ -44,5 +44,14 @@ Comment posting and voting currently update the UI locally.
 
 The project fetches articles, topics, and users from a backend API hosted on Render.
 
+## Initial Design
+
+Below are snapshots of early design mockups in Figma.  
+
+#### Articles List and Articles Page:
+
+<img src="src/assets/nc-news-articles-list.jpg" width="200" /> 
+<img src="src/assets/nc-news-articles-page.jpg" width="200" />
+
 ## License 
 MIT

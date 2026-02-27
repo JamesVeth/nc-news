@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./NavBar.css"; // ✅ matches file name exactly
+import "./NavBar.css"; // match file name exactly
 
 export default function NavBar({ topics }) {
   return (
